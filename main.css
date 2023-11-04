@@ -1,151 +1,119 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-.background{
-    background-color:rgb(249, 231, 187); ;
-}
-
-.navBar{
-    position:fixed;
-    background-color: rgb(217, 145, 29);
+html,body{
+    height:90%;
+    margin:0;
+    padding:0;
     width: 100%;
-    z-index: 2;
+    background-color: rgb(255, 229, 181);
 }
 
-#title{
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    padding: 10px;
-    float: left;
-    color: white;
-
-}
-
-.links{
-    float: right;
-    padding:10px;
-}
-
-.links a {
-    font-family: Arial, sans-serif;
-    font-size: 15px;
-    padding: 0px 10px;
-    color:azure;
-
-    
-}
-#centerBox{
+#navBar h1{
     position:absolute;
-    width: 100%;
+    font-size: 1em;
+    padding:1em;
+    margin:0 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+#navTitle{
+    color:#fff;
+}
+
+ul#navBarFlex{
+    display:flex;
+    list-style-type:none;
+    background: orange;
+    margin:0;
+    padding:0;
+    justify-content: flex-end;
+
+}
+
+#navBarFlex li{
+    
     text-align: center;
-    top: 85px;
+    font-size:1em;
+    padding: 1em;
+    color:#fff;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#main{
+    height:100%;
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
+   
+   
+
+}
+
+
+#content{
+    list-style-type:none;
+    width: 1080px;
+    height: 85%;
+    padding:0;
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: space-between;
     
 }
 
-.contentBox{
-    border: 3px solid orange;
-    border-radius: 10px;
-    height: 500px;
-    width: 275px;
-    margin: 0 10px;
-    display: inline-block;
-    background-color:rgb(255, 255, 255);
-    
 
-}
-.contentBox h1{
-    font-size: 30px;
-    margin:20px;
-    font-family:Arial, Helvetica, sans-serif;
-    float: left;
+.box{
     
-}
-.contentBox p{
-    font-size: 0.7em;
-    font-family: Georgia, Times, 'Times New Roman', serif;
-    padding: 20px;
-    clear:both;
-    text-align: left;
-    margin: 0 auto;
+    background:#fff;
+    list-style-type:none;
+    width:200px;
+    display:flex;
+    flex-direction: column;
     
-
-    
-}
-
-.infoBttn{
-    position:relative;
-    bottom:-25px;
-    background-color: orange;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: center;
-    padding:10px;
-    border: 3px;
+    margin:1em;
+    padding:1em;
+    border:0.15em;
+    border-style: solid;
     border-radius: 5px;
-    width: 80%;
-    margin: 10px auto;
-    color:white;
-    font-size: 10px;
-    clear:both;
-    
-
-
+    border-color: orange;
+    align-items: center;
 
 }
+
+
+
+.box .title{
+    align-self: flex-start;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+}
+.box .button{
+    align-self: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    background-color:orange;
+    padding:10px;
+    width:90%;
+    border-radius:8px;
+    text-align: center;
+    color:#fff;
+}
+
+.content{
+    list-style-type:none;
+    margin:0;
+    padding:0.5em;
+    display:flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.7em;
+    width: 200px;
+}
+
+.content li{
+    padding:10px;
+    margin:0;
+}
+
+
+
